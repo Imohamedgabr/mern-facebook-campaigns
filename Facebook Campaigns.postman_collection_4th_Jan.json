@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "6287f75a-cbed-4a63-8fbd-ead84584a5df",
+		"name": "Facebook Campaigns",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20564954"
+	},
+	"item": [
+		{
+			"name": "Save Campaigns",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"campaign\",\n    \"type\": \"fund\",\n    \"objective\": \"objective\",\n    \"spendLimit\": 1200,\n    \"adsets\": [\n        {\n            \"daily_budget\": 30,\n            \"start_date\": \"03/11/1990\",\n            \"start_time\": \"10:00\",\n            \"location\": \"location\",\n            \"age\": 20,\n            \"gender\": \"female\",\n            \"languages\": \"english\",\n            \"name\": \"fund\",\n            \"placement_for_ads\": \"placement_for_ads\",\n            \"assert_customization_feeds\": \"assert_customization_feeds\",\n            \"assert_customization_stories\": \"assert_customization_stories\",\n            \"Ads\": [\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                }\n            ]\n        },\n        {\n            \"daily_budget\": 30,\n            \"start_date\": \"03/11/1990\",\n            \"start_time\": \"10:00\",\n            \"location\": \"location\",\n            \"age\": 20,\n            \"gender\": \"femaile\",\n            \"languages\": \"english\",\n            \"name\": \"fund\",\n            \"placement_for_ads\": \"placement_for_ads\",\n            \"assert_customization_feeds\": \"assert_customization_feeds\",\n            \"assert_customization_stories\": \"assert_customization_stories\",\n            \"Ads\": [\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                }\n            ]\n        },\n        {\n            \"daily_budget\": 30,\n            \"start_date\": \"03/11/1990\",\n            \"start_time\": \"10:00\",\n            \"location\": \"location\",\n            \"age\": 20,\n            \"gender\": \"femaile\",\n            \"languages\": \"english\",\n            \"name\": \"fund\",\n            \"placement_for_ads\": \"placement_for_ads\",\n            \"assert_customization_feeds\": \"assert_customization_feeds\",\n            \"assert_customization_stories\": \"assert_customization_stories\",\n            \"Ads\": [\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                }\n            ]\n        },\n        {\n            \"daily_budget\": 30,\n            \"start_date\": \"03/11/1990\",\n            \"start_time\": \"10:00\",\n            \"location\": \"location\",\n            \"age\": 20,\n            \"gender\": \"femaile\",\n            \"languages\": \"english\",\n            \"name\": \"fund\",\n            \"placement_for_ads\": \"placement_for_ads\",\n            \"assert_customization_feeds\": \"assert_customization_feeds\",\n            \"assert_customization_stories\": \"assert_customization_stories\",\n            \"Ads\": [\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                }\n            ]\n        },\n        {\n            \"daily_budget\": 30,\n            \"start_date\": \"03/11/1990\",\n            \"start_time\": \"10:00\",\n            \"location\": \"location\",\n            \"age\": 20,\n            \"gender\": \"femaile\",\n            \"languages\": \"english\",\n            \"name\": \"fund\",\n            \"placement_for_ads\": \"placement_for_ads\",\n            \"assert_customization_feeds\": \"assert_customization_feeds\",\n            \"assert_customization_stories\": \"assert_customization_stories\",\n            \"Ads\": [\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                }\n            ]\n        },\n        {\n            \"daily_budget\": 30,\n            \"start_date\": \"03/11/1990\",\n            \"start_time\": \"10:00\",\n            \"location\": \"location\",\n            \"age\": 20,\n            \"gender\": \"femaile\",\n            \"languages\": \"english\",\n            \"name\": \"fund\",\n            \"placement_for_ads\": \"placement_for_ads\",\n            \"assert_customization_feeds\": \"assert_customization_feeds\",\n            \"assert_customization_stories\": \"assert_customization_stories\",\n            \"Ads\": [\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                },\n                {\n                    \"facebook_page\": \"facebook_page\",\n                    \"instagram_account\":\"instagram_account\",\n                    \"creative_source\":\"creative_source\",\n                    \"media\":\"media\",\n                    \"primary_text\":\"primary_text\",\n                    \"head_line\": \"head_line\",\n                    \"call_to_action\":\"call_to_action\",\n                    \"website_url\":\"website_url\",\n                    \"app_events\":\"app_events\",\n                    \"video_url\":\"video_url\"\n                }\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/campaigns",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Campaigns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/campaigns",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get fields",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/fields",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Fields",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"age\",\n    \"type\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/fields",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"john\",\n    \"email\": \"email@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
