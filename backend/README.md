@@ -10,3 +10,5 @@ npm install
 ```
 node server.js
 ```
+
+After App is ready, you'll find swagger documentation at '/apidocs'
