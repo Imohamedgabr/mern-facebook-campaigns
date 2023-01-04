@@ -1,4 +1,4 @@
-# Node.js Express & MongoDB: CRUD Rest APIs
+# Node.js Express & MongoDB: Campaigns CRUD Rest APIs using facebookSDK
 
 
 ## Project setup
@@ -11,4 +11,4 @@ npm install
 node server.js
 ```
 
-After App is ready, you'll find swagger documentation at '/apidocs'
+### After App is ready, you'll find swagger documentation at '/api-docs'
