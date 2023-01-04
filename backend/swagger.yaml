@@ -1,0 +1,347 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: Optional multiline or single-line description in HTML.
+  version: 0.1.9
+servers:
+  - url: http://localhost:8080/
+    description: Optional server description e.g. Main (production) server
+paths:
+  /api/users:
+    get:
+      summary: Returns a list of users.
+      description: Optional extended description in CommonMark or HTML.
+      responses:
+        '200':    # status code
+          description: A JSON array of users
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    email:
+                      type: string
+                    createdAt:
+                      type: string
+                    updatedAt:
+                      type: string
+                    id:
+                      type: integer
+                  example:       
+                     name: "ahmed"
+                     email: "email@example.com"
+                     createdAt: "2022-12-30T23:32:22.278Z"
+                     updatedAt: "2022-12-30T23:32:22.278Z"
+                     id: "63af7506238c48c89200c757"
+  /api/fields:
+    get:
+      summary: Returns a list of fields.
+      description: Optional extended description in CommonMark or HTML.
+      responses:
+        '200':    # status code
+          description: A JSON array of fields
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    createdAt:
+                      type: string
+                    updatedAt:
+                      type: string
+                    id:
+                      type: integer
+                  example:       
+                     name: "phone"
+                     type: "string"
+                     createdAt: "2022-12-30T23:32:22.278Z"
+                     updatedAt: "2022-12-30T23:32:22.278Z"
+                     id: "63af7506238c48c89200c757"
+    post:
+      summary: Creates a new field.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  example: string
+                name:
+                  type: string
+                  example: age
+              required:  
+              - name
+              - type
+      responses:
+        '200':    # status code
+          description: A JSON array of fields
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    createdAt:
+                      type: string
+                    updatedAt:
+                      type: string
+                    id:
+                      type: integer
+                  example:       
+                     name: "phone"
+                     type: "string"
+                     createdAt: "2022-12-30T23:32:22.278Z"
+                     updatedAt: "2022-12-30T23:32:22.278Z"
+                     id: "63af7506238c48c89200c757"
+  
+  /api/campaigns:
+    get:
+      summary: Returns a list of campaigns.
+      description: Optional extended description in CommonMark or HTML.
+      responses:
+        '200':    # status code
+          description: A JSON array of campaigns
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    objective:
+                      type: string
+                    spendLimit:
+                      type: string
+                    createdAt:
+                      type: string
+                    updatedAt:
+                      type: string
+                    id:
+                      type: integer
+                    adsets:
+                      type: object
+                      properties:
+                        daily_budget:
+                          type: string
+                        start_date:
+                          type: string
+                        location:
+                          type: string
+                        age:
+                          type: string
+                        gender:
+                          type: string
+                        languages:
+                          type: string
+                        name:
+                          type: string
+                        placement_for_ads:
+                          type: string
+                        assert_customization_feeds:
+                          type: string
+                        assert_customization_stories:
+                          type: string
+                        ads:
+                          type: object
+                          properties:
+                            facebook_page:
+                              type: string
+                            instagram_account:
+                              type: string
+                            creative_source:
+                              type: string
+                            media:
+                              type: string
+                            primary_text:
+                              type: string
+                            head_line:
+                              type: string
+                            call_to_action:
+                              type: string
+                            website_url:
+                              type: string
+                            app_events:
+                              type: string
+                            video_url:
+                              type: string
+                  example:       
+                      name: "first campaign"
+                      type: "first campaign"
+                      objective: "first campaign"
+                      spendLimit: "first campaign"
+                      adsets: []
+    post:
+      summary: Creates a new campaign.
+      requestBody:
+        required: true
+        content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    objective:
+                      type: string
+                    spendLimit:
+                      type: string
+                    createdAt:
+                      type: string
+                    updatedAt:
+                      type: string
+                    id:
+                      type: integer
+                    adsets:
+                      type: object
+                      properties:
+                        daily_budget:
+                          type: string
+                        start_date:
+                          type: string
+                        location:
+                          type: string
+                        age:
+                          type: string
+                        gender:
+                          type: string
+                        languages:
+                          type: string
+                        name:
+                          type: string
+                        placement_for_ads:
+                          type: string
+                        assert_customization_feeds:
+                          type: string
+                        assert_customization_stories:
+                          type: string
+                        ads:
+                          type: object
+                          properties:
+                            facebook_page:
+                              type: string
+                            instagram_account:
+                              type: string
+                            creative_source:
+                              type: string
+                            media:
+                              type: string
+                            primary_text:
+                              type: string
+                            head_line:
+                              type: string
+                            call_to_action:
+                              type: string
+                            website_url:
+                              type: string
+                            app_events:
+                              type: string
+                            video_url:
+                              type: string
+                  example:       
+                      name: "first campaign"
+                      type: "first campaign"
+                      objective: "first campaign"
+                      spendLimit: "first campaign"
+                      adsets: []
+      responses:
+        '200':    # status code
+          description: A JSON array of campaigns
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    objective:
+                      type: string
+                    spendLimit:
+                      type: string
+                    createdAt:
+                      type: string
+                    updatedAt:
+                      type: string
+                    id:
+                      type: integer
+                    adsets:
+                      type: object
+                      properties:
+                        daily_budget:
+                          type: string
+                        start_date:
+                          type: string
+                        location:
+                          type: string
+                        age:
+                          type: string
+                        gender:
+                          type: string
+                        languages:
+                          type: string
+                        name:
+                          type: string
+                        placement_for_ads:
+                          type: string
+                        assert_customization_feeds:
+                          type: string
+                        assert_customization_stories:
+                          type: string
+                        ads:
+                          type: object
+                          properties:
+                            facebook_page:
+                              type: string
+                            instagram_account:
+                              type: string
+                            creative_source:
+                              type: string
+                            media:
+                              type: string
+                            primary_text:
+                              type: string
+                            head_line:
+                              type: string
+                            call_to_action:
+                              type: string
+                            website_url:
+                              type: string
+                            app_events:
+                              type: string
+                            video_url:
+                              type: string
+                  example:       
+                      name: "first campaign"
+                      type: "first campaign"
+                      objective: "first campaign"
+                      spendLimit: "first campaign"
+                      adsets: []
